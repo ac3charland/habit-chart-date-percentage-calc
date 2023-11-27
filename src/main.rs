@@ -11,6 +11,8 @@ fn main() {
     // Extract the number of days from the duration
     let days = duration.num_days();
 
+    let percentage = (365 - days) / 365 * 100;
+
     // Print the result
-    println!("Number of days until October 15th, 2024: {}", days);
+    println!("Percentage complete until October 15th, 2024:\n\n {}\n\n==============================", percentage);
 }
